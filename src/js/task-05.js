@@ -5,10 +5,9 @@ const textDefault = nameOutput.textContent;
 nameInput.addEventListener('input', handlerClick);
 
 function handlerClick(evt) {
-  
-  if (nameInput === '') {
+  nameOutput.textContent = evt.currentTarget.value.trim();
+  if (nameInput.textContent.trim() === '') {
     nameOutput.textContent = textDefault;
-  } else {
-    nameOutput.textContent = evt.currentTarget.value;
   }
 }
+console.log(nameInput.textContent);
