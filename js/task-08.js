@@ -8,11 +8,12 @@ function onCheckForm(evt) {
   if (email.value === '' || password.value === '') {
      alert('All fields must be filled in');
   }else {
-    const result = {
-      email: email.value,
-      password: password.value,
-    }
+    const result = {}
+    result.email = email.value;
+    result.password = password.value;
     console.log(result);
+    evt.currentTarget.reset();
   }
+
   }
  

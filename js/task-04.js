@@ -9,10 +9,10 @@ function updateValue(){
   value.textContent = counterValue;
 };
 function decrementClick() {
-  counterValue += 1;
+  counterValue -= 1;
   updateValue()
   }
 function incrementClick() {
-  counterValue -= 1;
+  counterValue += 1;
   updateValue()
 }
